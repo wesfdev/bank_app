@@ -24,12 +24,10 @@ Run and Up
 Test
 Start the application and event handler processes:
 
-    ```elixir
-    {:ok, _pid} = EventApp.start_link()
-    {:ok, _pid} = AccountBalanceHandler.start_link()
-    ```
-
-    In a real application you would use a supervisor to start these processes.
+```elixir
+  {:ok, _pid} = EventApp.start_link()
+  {:ok, _pid} = AccountBalanceHandler.start_link()
+```
 
 Finally, we can dispatch a command to open a new bank account:
 
